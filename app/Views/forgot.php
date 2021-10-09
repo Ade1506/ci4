@@ -4,13 +4,11 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="">
-    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
-    <meta name="generator" content="Hugo 0.79.0">
-    <title>Signin Template · Bootstrap v5.0</title>
 
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <title>Foegor Password · Bootstrap v5.0</title>
+
+    <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback">
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
     <link rel="stylesheet" href="<?= base_url() ?>/public/css/icheck-bootstrap.min.css">
     <link rel="stylesheet" href="<?= base_url() ?>/public/css/adminlte.min.css">
 </head>
@@ -51,7 +49,7 @@
                     <div class="mb-3">
                         <button type="submit" class="btn btn-primary btn-block">Request new password</button>
                     </div>
-                    <a href="<?= base_url('/') ?>">Login</a>
+                    <a href="<?= base_url('/') ?>">Back to Login</a>
                 </form>
             </div>
         </div>
