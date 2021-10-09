@@ -40,27 +40,18 @@
                 <form action="<?= base_url('login/process'); ?>" method="post">
                     <?= csrf_field(); ?>
                     <div class="input-group mb-3">
-                        <input type="text" name="username" id="username" placeholder="Username" class="form-control" required autofocus>
+                        <input type="text" name="email" id="email" placeholder="Email Address" class="form-control" required autofocus>
                         <div class="input-group-append">
                             <div class="input-group-text">
-                                <span class="fas fa-user"></span>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="input-group mb-3">
-                        <input type="password" name="password" id="password" placeholder="Password" class="form-control" required>
-                        <div class="input-group-append">
-                            <div class="input-group-text">
-                                <span class="fas fa-lock"></span>
+                                <span class="fas fa-envelope"></span>
                             </div>
                         </div>
                     </div>
 
                     <div class="mb-3">
-                        <button type="submit" class="btn btn-primary btn-block">Log In</button>
+                        <button type="submit" class="btn btn-primary btn-block">Request new password</button>
                     </div>
-                    <a href="<?= base_url('forgot') ?>">Forgot password?</a>
+                    <a href="<?= base_url('/') ?>">Login</a>
                 </form>
             </div>
         </div>
