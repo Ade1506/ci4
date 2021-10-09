@@ -1,6 +1,6 @@
 <?php
 
-// Path to the front controller (this file)
+// Path to the front controller (this file) tes
 define('FCPATH', __DIR__ . DIRECTORY_SEPARATOR);
 
 /*
