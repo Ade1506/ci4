@@ -7,7 +7,7 @@
             <div class="row mb-2">
 
                 <div class="col-sm-6">
-                    <!-- <h1 class="m-0">Data User</h1> -->
+                    <a class="btn btn-primary" href="<?= base_url('user/create'); ?>" role="button">Add User Login</a>
                     <?php if (!empty(session()->getFlashdata('message'))) : ?>
                 <div class="alert alert-success alert-dismissible fade show" role="alert">
                     <?php echo session()->getFlashdata('message'); ?>
@@ -15,8 +15,7 @@
                         <span aria-hidden="true">&times;</span>
                     </button>
                 </div>
-            <?php endif; ?>
-                    <a class="btn btn-primary" href="<?= base_url('user/create'); ?>" role="button">Add User Login</a>
+                    <?php endif; ?>
                 </div>
 		  
                 <div class="col-sm-6">
@@ -25,12 +24,11 @@
                     <li class="breadcrumb-item active">Data User</li>
                     </ol>
                 </div>
-
             </div>
         </div>
     </div>
 
-    <div class="container">
+    <div class="container-fluid">
             <div class="card">
                 <div class="card-header">
                     List Data User Login
@@ -49,12 +47,14 @@
               <div class="card-body">
                 <table class="table table-bordered table-hover">
                     <thead>
-                        <tr>
+                        <tr style="text-align:center">
                             <th style="width: 10px">#</th>
-                            <th>Task</th>
-                            <th>Progress</th>
-                            <th style="width: 40px">Label</th>
-                            <th>Aksi</th>
+                            <th>User Name</th>
+                            <th>User Role</th>
+                            <th>User Email</th>
+                            <th>Last Login</th>
+                            <th>Last Update</th>
+                            <th style="width: 130px">Action</th>
                         </tr>
                     </thead>
                     <tbody>
@@ -62,10 +62,13 @@
                       <tr>
                         <td>1</td>
                         <td><?= $row->username;?></td>
-                        <td><?= $row->password;?></td>
                         <td><?= $row->name;?></td>
-                        <td><a title="Edit" href="<?= base_url("user/edit/$row->username"); ?>" class="btn btn-info btn-sm"><i class="nav-icon fas fa-pen"></i></a>
-                            <a title="Delete" href="<?= base_url("user/delete/$row->username") ?>" class="btn btn-danger btn-sm" onclick="return confirm('Apakah Anda yakin ingin menghapus data ?')"><i class="nav-icon fas fa-trash-alt"></i></a>
+                        <td></td>
+                        <td style="text-align:center"><?= $row->updated_at;?></td>
+                        <td style="text-align:center"></td>
+                        <td><a title="Edit" href="<?= base_url("user/view/$row->username"); ?>" class="btn btn-success btn-sm"><i class="fas fa-eye"></i></a>
+                            <a title="Edit" href="<?= base_url("user/edit/$row->username"); ?>" class="btn btn-info btn-sm"><i class="fas fa-pen"></i></a>
+                            <a title="Delete" href="<?= base_url("user/delete/$row->username") ?>" class="btn btn-danger btn-sm" onclick="return confirm('Apakah Anda yakin ingin menghapus data ?')"><i class="fas fa-trash-alt"></i></a>
                         </td>
                     </tr>
                     <?php } ?>

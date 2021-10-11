@@ -9,7 +9,7 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
   <link rel="stylesheet" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
   <link rel="stylesheet" href="<?= base_url() ?>/public/css/icheck-bootstrap.min.css">
-  <link rel="stylesheet" href="<?= base_url() ?>/public/css/adminlte.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/admin-lte@3.1.0/dist/css/adminlte.min.css">
 </head>
 
 <body class="hold-transition sidebar-mini">
@@ -51,10 +51,11 @@
 			<!-- Sidebar user panel (optional) -->
 			<div class="user-panel mt-3 pb-3 mb-3 d-flex">
 				<div class="image">
-				<img src="<?= base_url() ?>/public/img/user2-160x160.jpg" class="img-circle elevation-2" alt="User Image">
+				<img src="<?= base_url() ?>/public/img/user2-160x160.jpg" class="img-circle elevation-2" style="width:3rem">
 				</div>
 				<div class="info">
-				<a href="#" class="d-block"><?= session()->get('name'); ?></a>
+				<a href="#"><?= session()->get('name'); ?></a> <br>
+				<small><span style="color:#00ff3a">Online</span></small>
 				</div>
 			</div>
 
@@ -92,7 +93,7 @@
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
-<script src="<?= base_url() ?>/public/js/adminlte.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/admin-lte@3.1.0/dist/js/adminlte.min.js"></script>
 <script src="<?= base_url() ?>/public/js/dashboard.js"></script>
 </body>
 </html>
