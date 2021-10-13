@@ -16,6 +16,7 @@ class User extends BaseController
     public function index()
     {
         $data['user'] = $this->user->findAll();
+        // $data = ['pageTitle' => 'Home :: Dashbooard'];
         return view('user/index', $data);
     }
 }

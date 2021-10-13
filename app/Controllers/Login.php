@@ -28,7 +28,7 @@ class Login extends BaseController
                     'name' => $dataUser->name,
                     'logged_in' => TRUE
                 ]);
-                return redirect()->to(base_url('dashboard'));
+                return redirect()->to(base_url('home'));
             } else {
                 session()->setFlashdata('error', 'Username atau password salah!');
                 return redirect()->back();

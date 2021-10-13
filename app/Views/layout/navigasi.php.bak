@@ -2,7 +2,7 @@
     <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
     
     <li class="nav-item ">
-        <a href="<?= base_url('dashboard') ?>" class="nav-link">
+        <a href="<?= base_url('home') ?>" class="nav-link">
         <i class="nav-icon fas fa-tachometer-alt"></i>
         <p> Dashboard </p>
         </a>
@@ -16,7 +16,7 @@
     </li>
 
     <li class="nav-item">
-        <a href="<?= base_url('dashboard/konsumen'); ?>" class="nav-link">
+        <a href="<?= base_url('konsumen'); ?>" class="nav-link">
         <i class="nav-icon fas fa-table"></i>
         <p> Data Konsumen </p>
         </a>
